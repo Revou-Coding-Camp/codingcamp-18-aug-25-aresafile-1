@@ -1,0 +1,122 @@
+body {
+  font-family: 'Poppins', Helvetica, sans-serif;
+  background: #e2e2e2;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px 25px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+
+h1 {
+  text-align: center;
+  color: #003049;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+form input[type="text"], form input[type="date"], form select {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 8px 12px;
+  border: none;
+  background: #4b6cb7;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background: #35518a;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.controls select, .controls button {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+}
+
+#clear-all {
+  background: #bf0603;
+  color: #fff;
+  border: none;
+  transition: background 0.2s;
+}
+
+#clear-all:hover {
+  background: #8D0801;
+}
+
+#task-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#task-table th, #task-table td {
+  border: 1px solid #d1d5db;
+  padding: 8px 6px;
+  text-align: center;
+}
+
+#task-table th {
+  background: #f0f4fa;
+}
+
+.status-diutamakan {
+  color: #00A6ED;
+  font-weight: bold;
+}
+
+.status-selesai {
+  color: #688E26;
+  font-weight: bold;
+}
+
+.status-diproses {
+  color: #FAA613;
+  font-weight: bold;
+}
+
+.action-btn {
+  padding: 4px 8px;
+  border: none;
+  border-radius: px;
+  background: #bf0603;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.action-btn:hover {
+  background: #8D0801;
+}
+
+#message {
+  margin-top: 12px;
+  color: #bf0603;
+  text-align: center;
+  min-height: 20px;
+  font-size: 15px;
+}
