@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List App Aresa</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="todo-container">
+    <h1>To Do List Aresa</h1>
+    
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Masukkan Tugas..." required>
+      <input type="date" id="date-input" required>
+      <select id="status-input">
+        <option value="diutamakan">Di Utamakan</option>
+        <option value="diproses">Di Proses</option>
+        <option value="selesai">Selesai</option>
+      </select>
+      <button type="submit">Tambah</button>
+    </form>
+
+    <div class="controls">
+      <select id="filter">
+        <option value="all">Semua</option>
+        <option value="diutamakan">Di Utamakan</option>
+        <option value="diproses">Di Proses</option>
+        <option value="selesai">Selesai</option>
+      </select>
+      <button id="clear-all">Hapus Semua</button>
+    </div>
+
+    <table id="task-table">
+      <thead>
+        <tr>
+            <th>No</th>
+          <th>Tugas</th>
+          <th>Jatuh Tempo</th>
+          <th>Status</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+
+      <tbody id="task-list"></tbody>
+
+    </table>
+    
+    <div id="message"></div>
+  </div>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
